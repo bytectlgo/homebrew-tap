@@ -5,21 +5,21 @@
 class EdgeTts < Formula
   desc "Edge TTS is a command-line tool based on Microsoft Edge's text-to-speech service"
   homepage "https://github.com/bytectlgo/edge-tts"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.3/edge-tts_Darwin_x86_64.tar.gz"
-      sha256 "7451539b61ae3ddff261bda78b8379fedc8b93fbc0390f406b1816e1a70e0415"
+      url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.4/edge-tts_Darwin_x86_64.tar.gz"
+      sha256 "6bcc2ccba1369461f526a8981d92887b40d9413c5fad49a179d70d99fb65a459"
 
       def install
         bin.install "edge-tts"
       end
     end
     on_arm do
-      url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.3/edge-tts_Darwin_arm64.tar.gz"
-      sha256 "078381fda6a700fbeae327977cbcf0a57997a4efd405e4eec5b8273761489cc3"
+      url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.4/edge-tts_Darwin_arm64.tar.gz"
+      sha256 "a1a7dec0900a7b5b7a6115e56074a6f2cb4246942c7606aedea3ce5f03d4c83c"
 
       def install
         bin.install "edge-tts"
@@ -30,8 +30,8 @@ class EdgeTts < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.3/edge-tts_Linux_x86_64.tar.gz"
-        sha256 "70a75d6e3f09bdb13d65bd81a1eb8871a8fdcc3dfbcb9342e57d186fcceb675c"
+        url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.4/edge-tts_Linux_x86_64.tar.gz"
+        sha256 "289068e40ff75a4eba723e74082da78740b1eaee97c5c2bc88e909eea79dc664"
 
         def install
           bin.install "edge-tts"
@@ -40,8 +40,8 @@ class EdgeTts < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.3/edge-tts_Linux_arm64.tar.gz"
-        sha256 "aad61c93a990efadca6c7969952eeb010249a2a1307e643a6afae44b13fb5bca"
+        url "https://github.com/bytectlgo/edge-tts/releases/download/v1.0.4/edge-tts_Linux_arm64.tar.gz"
+        sha256 "6707e71606c3f99fd1cb6ed72b771a082e0c681b2e68f5ba4b6ce654b0aa29a2"
 
         def install
           bin.install "edge-tts"
